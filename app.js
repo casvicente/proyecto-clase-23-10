@@ -17,6 +17,6 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(cors(corsOptions));
 //app.use(express.static(__dirname + "/public"));
-app.use(routes);
+app.use('/api/v1',routes);
 // comentario
 module.exports = app;

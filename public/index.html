@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,21 @@
     <title>Proyecto !!!!!!!!</title>
     <script src="index.js"></script>
 </head>
+
 <body>
     <h1>Reconocimiento de im&aacute;genes</h1>
     <br>
-    <input type="file" name="imagen" id="inputImage"/>
+    <input type="file" name="imagen" id="inputImage" />
     <br>
-    <img src="#" alt=" " id="previewImage"/>
+    <button onclick="reconocerImagen();">Reconocer</button>
     <br>
-    <button onclick="reconocerImagen();"> Reoconocer </button>
-    
-        <div id="respuestaWatsonVisualRecognition" >
-        </div>
-        
-    </textarea>
+    <input type="text" id="searchDiscovery"> <button onclick="buscarDiscovery();">Buscar</button>
+    <div id="respuestaWatsonVisualRecognition">
+    </div>
+    <br>
+    <h2>Informacion</h2>
+    <p id="informacionDiscovery"></p>
+    <img srv="#" id="imagenPreview"></img>
 </body>
+
 </html>
